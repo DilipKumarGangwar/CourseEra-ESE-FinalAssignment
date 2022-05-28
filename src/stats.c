@@ -38,7 +38,7 @@ void print_array(unsigned char a[],int n){
     #define PRINTF(...)  
     #endif 
     for(i=0;i<n;i++)
-       printf("a[%d] = %d ",i,a[i]);
+       printf("%d ",a[i]);
     printf("\n"); 
     #if defined (VERBOSE) && defined (HOST)
     #undef PRINTF 

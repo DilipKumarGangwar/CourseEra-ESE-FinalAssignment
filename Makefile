@@ -109,8 +109,8 @@ build: $(TARGET).out  $(TARGET).asm
 
 $(TARGET).out: $(OBJ_FILES) $(DEPS) 
 	$(CC) $(CFLAGS) $(INCLUDES) $(LDFLAGS) $(OBJ_FILES) -o $@ 
-	$(SIZE) -Atd $(TARGET).out
-	$(SIZE) $(TARGET).out
+	#$(SIZE) -Atd $(TARGET).out
+	#$(SIZE) $(TARGET).out
 	
 .PHONY: clean
 clean: 
